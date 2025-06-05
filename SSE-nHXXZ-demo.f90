@@ -207,8 +207,8 @@ use configuration;implicit none
 integer,dimension(0:3) :: vertexspin,vertexspin_aft
 integer :: a,xin,xout
 
-do a=1,6
-    a=a-1
+do a=0,5
+    
     if ((a==0) .or. (a==3) .or. (a==4)) then
     ! Check the current spin states of the vertex a
         vertexspin(0) = 1
